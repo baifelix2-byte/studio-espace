@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nos réalisations — STUDIO ESPACE</title>
+  <meta name="description" content="Portfolio de concepts et d’exercices de design d’intérieur : salon, chambre, restaurant, bureau, petit studio et espace d’accueil.">
+  <meta name="theme-color" content="#173D32">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Nos réalisations — STUDIO ESPACE">
+  <meta property="og:description" content="Portfolio de concepts et d’exercices de design d’intérieur : salon, chambre, restaurant, bureau, petit studio et espace d’accueil.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <!-- Polices gratuites Google Fonts (le site reste lisible hors ligne grâce aux polices de secours) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+  <header class="entete">
+    <div class="conteneur entete__barre">
+      <a class="logo" href="index.html" aria-label="STUDIO ESPACE — retour à l’accueil">
+        <svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect x="3" y="3" width="34" height="34" fill="none" stroke="#173D32" stroke-width="3"/><path d="M3 18h19V3" fill="none" stroke="#173D32" stroke-width="3"/></svg>
+        <span class="logo__texte">STUDIO<small>ESPACE</small></span>
+      </a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+      <nav class="nav" id="menu-principal" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="realisations.html" aria-current="page">Réalisations</a></li>
+          <li><a href="inspirations.html">Inspirations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a class="btn" href="contact.html">Demander un devis</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="contenu">
+    <section class="page-titre">
+      <div class="conteneur">
+        <h1>Des idées devenues espaces</h1>
+        <p>Une sélection de concepts et d’exercices de conception. Cliquez sur une image pour l’agrandir.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Galerie des projets">
+      <div class="conteneur">
+        <p class="mention" style="margin-bottom:2rem"><strong>Important :</strong> ces projets sont des concepts, des exercices académiques et des propositions de design. Ce ne sont pas des chantiers livrés à des clients.</p>
+        <div class="filtres" role="group" aria-label="Filtrer les projets par catégorie">
+          <button class="filtre" type="button" data-filtre="tous" aria-pressed="true">Tous</button>
+          <button class="filtre" type="button" data-filtre="residentiel" aria-pressed="false">Résidentiel</button>
+          <button class="filtre" type="button" data-filtre="restauration" aria-pressed="false">Restauration</button>
+          <button class="filtre" type="button" data-filtre="professionnel" aria-pressed="false">Professionnel</button>
+        </div>
+        <div class="grille grille--3">
+          <article class="projet carte apparait" data-categorie="residentiel">
+            <button class="projet__zoom" type="button" data-src="assets/images/salon-organique-cuivre.jpg" data-alt="Salon contemporain avec canapés courbes, tables en bois brut et mur en cuivre" data-titre="Salon contemporain" data-desc="Concept de salon aux lignes courbes : canapés enveloppants, bois brut et cuivre pour une ambiance chaleureuse." aria-label="Agrandir l’image : Salon contemporain">
+              <div class="carte__image"><img src="assets/images/salon-organique-cuivre.jpg" alt="Salon contemporain avec canapés courbes, tables en bois brut et mur en cuivre" loading="lazy"></div>
+              <span class="badge">Concept</span>
+            </button>
+            <div class="carte__corps">
+              <p class="carte__meta">Résidentiel</p>
+              <h3>Salon contemporain</h3>
+              <p>Concept de salon aux lignes courbes : canapés enveloppants, bois brut et cuivre pour une ambiance chaleureuse.</p>
+            </div>
+          </article>
+          <article class="projet carte apparait" data-categorie="residentiel">
+            <button class="projet__zoom" type="button" data-src="assets/images/chambre-chaleureuse-bois.jpg" data-alt="Chambre élégante avec tête de lit rétroéclairée et rangements en bois" data-titre="Chambre élégante" data-desc="Concept de chambre : panneau de tête de lit rétroéclairé, rangements intégrés, tons sable et gris." aria-label="Agrandir l’image : Chambre élégante">
+              <div class="carte__image"><img src="assets/images/chambre-chaleureuse-bois.jpg" alt="Chambre élégante avec tête de lit rétroéclairée et rangements en bois" loading="lazy"></div>
+              <span class="badge">Concept</span>
+            </button>
+            <div class="carte__corps">
+              <p class="carte__meta">Résidentiel</p>
+              <h3>Chambre élégante</h3>
+              <p>Concept de chambre : panneau de tête de lit rétroéclairé, rangements intégrés, tons sable et gris.</p>
+            </div>
+          </article>
+          <article class="projet carte apparait" data-categorie="restauration">
+            <button class="projet__zoom" type="button" data-src="assets/images/salle-a-manger-lustre.jpg" data-alt="Salle à manger avec grande table ronde, chaises tapissées et luminaire sculptural" data-titre="Restaurant moderne" data-desc="Proposition d’ambiance pour une salle de restaurant intimiste : table ronde, assises confortables, suspension centrale." aria-label="Agrandir l’image : Restaurant moderne">
+              <div class="carte__image"><img src="assets/images/salle-a-manger-lustre.jpg" alt="Salle à manger avec grande table ronde, chaises tapissées et luminaire sculptural" loading="lazy"></div>
+              <span class="badge">Concept</span>
+            </button>
+            <div class="carte__corps">
+              <p class="carte__meta">Restauration</p>
+              <h3>Restaurant moderne</h3>
+              <p>Proposition d’ambiance pour une salle de restaurant intimiste : table ronde, assises confortables, suspension centrale.</p>
+            </div>
+          </article>
+          <article class="projet carte apparait" data-categorie="professionnel">
+            <button class="projet__zoom" type="button" data-src="assets/images/loft-bleu-beton.jpg" data-alt="Espace en béton brut avec grand tableau bleu et meuble sculptural" data-titre="Bureau professionnel" data-desc="Concept d’espace de travail ou de direction : béton brut, bleu profond et mobilier à forte personnalité." aria-label="Agrandir l’image : Bureau professionnel">
+              <div class="carte__image"><img src="assets/images/loft-bleu-beton.jpg" alt="Espace en béton brut avec grand tableau bleu et meuble sculptural" loading="lazy"></div>
+              <span class="badge">Concept</span>
+            </button>
+            <div class="carte__corps">
+              <p class="carte__meta">Professionnel</p>
+              <h3>Bureau professionnel</h3>
+              <p>Concept d’espace de travail ou de direction : béton brut, bleu profond et mobilier à forte personnalité.</p>
+            </div>
+          </article>
+          <article class="projet carte apparait" data-categorie="residentiel">
+            <button class="projet__zoom" type="button" data-src="assets/images/salon-meuble-tv-integre.jpg" data-alt="Petit séjour avec meuble mural intégré, éclairage indirect et canapé d’angle" data-titre="Petit studio optimisé" data-desc="Exercice d’optimisation d’un petit volume : mur multimédia avec rangements intégrés et circulation dégagée." aria-label="Agrandir l’image : Petit studio optimisé">
+              <div class="carte__image"><img src="assets/images/salon-meuble-tv-integre.jpg" alt="Petit séjour avec meuble mural intégré, éclairage indirect et canapé d’angle" loading="lazy"></div>
+              <span class="badge">Concept</span>
+            </button>
+            <div class="carte__corps">
+              <p class="carte__meta">Résidentiel</p>
+              <h3>Petit studio optimisé</h3>
+              <p>Exercice d’optimisation d’un petit volume : mur multimédia avec rangements intégrés et circulation dégagée.</p>
+            </div>
+          </article>
+          <article class="projet carte apparait" data-categorie="professionnel">
+            <button class="projet__zoom" type="button" data-src="assets/images/hall-escalier-marbre.jpg" data-alt="Hall d’accueil avec grand escalier, sol en marbre graphique et lustre" data-titre="Espace d’accueil et réception" data-desc="Proposition de hall d’accueil : sol graphique en marbre, escalier sculptural et éclairage décoratif." aria-label="Agrandir l’image : Espace d’accueil et réception">
+              <div class="carte__image"><img src="assets/images/hall-escalier-marbre.jpg" alt="Hall d’accueil avec grand escalier, sol en marbre graphique et lustre" loading="lazy"></div>
+              <span class="badge">Concept</span>
+            </button>
+            <div class="carte__corps">
+              <p class="carte__meta">Professionnel</p>
+              <h3>Espace d’accueil et réception</h3>
+              <p>Proposition de hall d’accueil : sol graphique en marbre, escalier sculptural et éclairage décoratif.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--vert bandeau">
+      <div class="conteneur apparait">
+        <h2>Un projet en tête ?</h2>
+        <p>Parlez-nous de votre espace : nous vous proposerons une première orientation.</p>
+        <div class="groupe-btn"><a class="btn btn--sable" href="contact.html">Demander un devis</a></div>
+      </div>
+    </section>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Image agrandie">
+      <button class="fermer" type="button" aria-label="Fermer l’image">×</button>
+      <button class="lightbox__btn lightbox__btn--prec" type="button" aria-label="Image précédente">‹</button>
+      <figure>
+        <img src="" alt="">
+        <figcaption><strong data-lb-titre></strong><span data-lb-desc></span></figcaption>
+      </figure>
+      <button class="lightbox__btn lightbox__btn--suiv" type="button" aria-label="Image suivante">›</button>
+    </dialog>
+  </main>
+  <footer class="pied">
+    <div class="conteneur">
+      <div class="pied__grille">
+        <div>
+          <a class="logo" href="index.html" aria-label="STUDIO ESPACE — accueil">
+            <svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect x="3" y="3" width="34" height="34" fill="none" stroke="#D9C3A1" stroke-width="3"/><path d="M3 18h19V3" fill="none" stroke="#D9C3A1" stroke-width="3"/></svg>
+            <span class="logo__texte">STUDIO<small>ESPACE</small></span>
+          </a>
+          <p>Imaginer, concevoir et transformer les espaces.<br>Studio de projet académique en architecture d’intérieur et design.</p>
+        </div>
+        <div>
+          <h2>Navigation</h2>
+          <ul><li><a href="index.html">Accueil</a></li><li><a href="a-propos.html">À propos</a></li><li><a href="services.html">Services</a></li><li><a href="realisations.html">Réalisations</a></li><li><a href="inspirations.html">Inspirations</a></li><li><a href="contact.html">Contact</a></li></ul>
+        </div>
+        <div>
+          <h2>Nous contacter</h2>
+          <ul>
+            <li><a href="contact.html">Demander un devis</a></li>
+            <li><a href="contact.html" data-si-config="whatsapp" hidden target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="contact.html" data-si-config="email" hidden>Envoyer un e-mail</a></li>
+            <li><span data-config="localisation">Cameroun</span></li>
+          </ul>
+        </div>
+      </div>
+      <p class="pied__bas">© <span data-annee>2026</span> STUDIO ESPACE — projet académique de BAI FELIX et YOUSSOUF DAHDAI, Institut des Beaux-Arts et de l’Innovation, Université de Garoua. Les réalisations présentées sont des concepts et des exercices de design. Les images sont des visuels d’inspiration (voir SOURCES.md).</p>
+    </div>
+  </footer>
+  <button class="haut" type="button" aria-label="Revenir en haut de la page">↑</button>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact et devis — STUDIO ESPACE</title>
+  <meta name="description" content="Contactez STUDIO ESPACE à Garoua (Cameroun) : demande de devis, WhatsApp et informations à fournir pour recevoir une proposition d’aménagement.">
+  <meta name="theme-color" content="#173D32">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Contact et devis — STUDIO ESPACE">
+  <meta property="og:description" content="Contactez STUDIO ESPACE à Garoua (Cameroun) : demande de devis, WhatsApp et informations à fournir pour recevoir une proposition d’aménagement.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <!-- Polices gratuites Google Fonts (le site reste lisible hors ligne grâce aux polices de secours) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+  <header class="entete">
+    <div class="conteneur entete__barre">
+      <a class="logo" href="index.html" aria-label="STUDIO ESPACE — retour à l’accueil">
+        <svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect x="3" y="3" width="34" height="34" fill="none" stroke="#173D32" stroke-width="3"/><path d="M3 18h19V3" fill="none" stroke="#173D32" stroke-width="3"/></svg>
+        <span class="logo__texte">STUDIO<small>ESPACE</small></span>
+      </a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+      <nav class="nav" id="menu-principal" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="realisations.html">Réalisations</a></li>
+          <li><a href="inspirations.html">Inspirations</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+          <li><a class="btn" href="contact.html">Demander un devis</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="contenu">
+    <section class="page-titre">
+      <div class="conteneur">
+        <h1>Parlons de votre prochain projet</h1>
+        <p>Décrivez votre besoin : nous vous répondrons avec une première orientation et les étapes à prévoir.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Contact et devis">
+      <div class="conteneur contact-grille">
+        <div>
+          <div class="panneau apparait">
+            <h2>Coordonnées</h2>
+            <dl class="coordonnees">
+              <div><dt>WhatsApp</dt><dd><a class="a-completer" href="contact.html" data-config="whatsapp" target="_blank" rel="noopener">À renseigner dans js/config.js</a></dd></div>
+              <div><dt>E-mail</dt><dd><a class="a-completer" href="contact.html" data-config="email">À renseigner dans js/config.js</a></dd></div>
+              <div><dt>Localisation</dt><dd data-config="localisation">Cameroun</dd></div>
+            </dl>
+            <p style="margin-top:1rem"><a class="btn btn--contour" href="contact.html" data-si-config="whatsapp" hidden target="_blank" rel="noopener">Écrire sur WhatsApp</a></p>
+          </div>
+          <div class="panneau apparait" style="margin-top:1.5rem">
+            <h3>Pour recevoir une proposition</h3>
+            <ul class="liste-info">
+              <li>Le type d’espace (salon, chambre, bureau, commerce…).</li>
+              <li>Les dimensions approximatives ou un croquis.</li>
+              <li>Des photos du lieu actuel, si possible.</li>
+              <li>Votre budget indicatif et le délai souhaité.</li>
+              <li>Vos goûts : couleurs, matières, exemples d’intérieurs aimés.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="panneau apparait">
+          <h2>Votre demande</h2>
+          <form id="formulaire-devis" novalidate>
+            <div class="champ"><label for="nom">Nom complet</label><input id="nom" name="nom" type="text" autocomplete="name" required></div>
+            <div class="rangee">
+              <div class="champ"><label for="telephone">Téléphone</label><input id="telephone" name="telephone" type="tel" autocomplete="tel"></div>
+              <div class="champ"><label for="email">Adresse e-mail</label><input id="email" name="email" type="email" autocomplete="email"></div>
+            </div>
+            <div class="champ"><label for="service">Type de service</label><select id="service" name="service" required><option value="">— Choisir un service —</option><option value="Aménagement intérieur">Aménagement intérieur</option><option value="Décoration intérieure">Décoration intérieure</option><option value="Conception de salons et chambres">Conception de salons et chambres</option><option value="Aménagement de bureaux et commerces">Aménagement de bureaux et commerces</option><option value="Optimisation des petits espaces">Optimisation des petits espaces</option><option value="Conception de plans et propositions d’aménagement">Conception de plans et propositions d’aménagement</option><option value="Modélisation 3D et visualisation architecturale">Modélisation 3D et visualisation architecturale</option><option value="Conseils en matériaux, couleurs et mobilier">Conseils en matériaux, couleurs et mobilier</option><option value="Autre / je ne sais pas encore">Autre / je ne sais pas encore</option></select></div>
+            <div class="champ"><label for="budget">Budget indicatif (facultatif)</label><select id="budget" name="budget"><option value="">— Non précisé —</option><option>Moins de 500 000 FCFA</option><option>500 000 à 1 500 000 FCFA</option><option>1 500 000 à 5 000 000 FCFA</option><option>Plus de 5 000 000 FCFA</option><option>Je ne sais pas encore</option></select></div>
+            <div class="champ"><label for="description">Description du projet</label><textarea id="description" name="description" required placeholder="Type de lieu, dimensions, style souhaité, délai…"></textarea></div>
+            <div class="piege" aria-hidden="true"><label for="site-web">Ne pas remplir</label><input id="site-web" name="site-web" type="text" tabindex="-1" autocomplete="off"></div>
+            <button class="btn" type="submit">Envoyer ma demande</button>
+          </form>
+          <div id="statut-formulaire" class="statut" role="status" tabindex="-1" hidden></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="pied">
+    <div class="conteneur">
+      <div class="pied__grille">
+        <div>
+          <a class="logo" href="index.html" aria-label="STUDIO ESPACE — accueil">
+            <svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect x="3" y="3" width="34" height="34" fill="none" stroke="#D9C3A1" stroke-width="3"/><path d="M3 18h19V3" fill="none" stroke="#D9C3A1" stroke-width="3"/></svg>
+            <span class="logo__texte">STUDIO<small>ESPACE</small></span>
+          </a>
+          <p>Imaginer, concevoir et transformer les espaces.<br>Studio de projet académique en architecture d’intérieur et design.</p>
+        </div>
+        <div>
+          <h2>Navigation</h2>
+          <ul><li><a href="index.html">Accueil</a></li><li><a href="a-propos.html">À propos</a></li><li><a href="services.html">Services</a></li><li><a href="realisations.html">Réalisations</a></li><li><a href="inspirations.html">Inspirations</a></li><li><a href="contact.html">Contact</a></li></ul>
+        </div>
+        <div>
+          <h2>Nous contacter</h2>
+          <ul>
+            <li><a href="contact.html">Demander un devis</a></li>
+            <li><a href="contact.html" data-si-config="whatsapp" hidden target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="contact.html" data-si-config="email" hidden>Envoyer un e-mail</a></li>
+            <li><span data-config="localisation">Cameroun</span></li>
+          </ul>
+        </div>
+      </div>
+      <p class="pied__bas">© <span data-annee>2026</span> STUDIO ESPACE — projet académique de BAI FELIX et YOUSSOUF DAHDAI, Institut des Beaux-Arts et de l’Innovation, Université de Garoua. Les réalisations présentées sont des concepts et des exercices de design. Les images sont des visuels d’inspiration (voir SOURCES.md).</p>
+    </div>
+  </footer>
+  <button class="haut" type="button" aria-label="Revenir en haut de la page">↑</button>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
